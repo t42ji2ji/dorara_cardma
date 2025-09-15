@@ -1,18 +1,18 @@
 import ContactForm from '@/components/ContactForm';
 import FAQ from '@/components/FAQ';
-// import { useTheme } from '@/components/ThemeProvider';
+import { useTheme } from '@/components/ThemeProvider';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Mail, Twitter } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-// import { AppStoreButton } from 'react-mobile-app-button';
+import { AppStoreButton } from 'react-mobile-app-button';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   const { t } = useTranslation();
 
   const titleChars = t('app.title').split('');
-  //   const { theme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className="bg-background">
@@ -69,7 +69,7 @@ const Home = () => {
               dorara_hsieh
             </a>
           </p>
-          App Store Download Button
+          {/* App Store Download Button */}
           <div className="flex justify-center mb-8">
             <AppStoreButton
               theme={theme === 'dark' ? 'dark' : 'light'}
