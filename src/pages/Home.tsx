@@ -37,7 +37,6 @@ const Home = () => {
               className="w-24 h-24 mx-auto rounded-2xl shadow-lg border-4 border-primary"
             />
           </motion.div>
-
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 flex justify-center flex-wrap">
             {titleChars.map((char, index) => (
               <motion.span
@@ -70,16 +69,13 @@ const Home = () => {
               dorara_hsieh
             </a>
           </p>
-
-          {/* App Store Download Button 
+          App Store Download Button
           <div className="flex justify-center mb-8">
             <AppStoreButton
               theme={theme === 'dark' ? 'dark' : 'light'}
-              url="https://apps.apple.com/tw/app/ziwe/id6749048766?l=en-GB"
+              url="https://apps.apple.com/tw/app/cardma/id6747955972?l=en-GB"
             />
           </div>
-          */}
-
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="outline" size="lg" asChild>
               <a
